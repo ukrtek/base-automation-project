@@ -1,4 +1,6 @@
-namespace base_automation_project.utils.WebDriverBuilder
+using base_automation_project.utils.WebDriverBuilder;
+
+namespace base_automation_project.utils.Models
 {
     public class DriverOption
     {

@@ -29,6 +29,90 @@
       <None Update="log4net.config">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_UnmanagedRegistrationCache Remove="obj\base-automation-project.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\base-automation-project.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\base-automation-project.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\base-automation-project.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\base-automation-project.csproj.UnmanagedRegistration.cache" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.0\base-automation-project.csproj.ResolveComReference.cache" />
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.0\base-automation-project.csproj.ResolveComReference.cache" />
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.0\base-automation-project.csproj.ResolveComReference.cache" />
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.0\base-automation-project.csproj.ResolveComReference.cache" />
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.0\base-automation-project.csproj.ResolveComReference.cache" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.0\base-automation-project.pdb" />
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.0\base-automation-project.pdb" />
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.0\base-automation-project.pdb" />
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.0\base-automation-project.pdb" />
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.0\base-automation-project.pdb" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.0\base-automation-project.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ApplicationManifest Remove="obj\Debug\netcoreapp3.0\Native.base-automation-project.manifest" />
+      <ApplicationManifest Remove="obj\Debug\netcoreapp3.0\Native.base-automation-project.manifest" />
+      <ApplicationManifest Remove="obj\Debug\netcoreapp3.0\Native.base-automation-project.manifest" />
+      <ApplicationManifest Remove="obj\Debug\netcoreapp3.0\Native.base-automation-project.manifest" />
+      <ApplicationManifest Remove="obj\Debug\netcoreapp3.0\Native.base-automation-project.manifest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <DeployManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.application" />
+      <DeployManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.application" />
+      <DeployManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.application" />
+      <DeployManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.application" />
+      <DeployManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.application" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ClsidMap Remove="obj\Debug\netcoreapp3.0\base-automation-project.clsidmap" />
+      <ClsidMap Remove="obj\Debug\netcoreapp3.0\base-automation-project.clsidmap" />
+      <ClsidMap Remove="obj\Debug\netcoreapp3.0\base-automation-project.clsidmap" />
+      <ClsidMap Remove="obj\Debug\netcoreapp3.0\base-automation-project.clsidmap" />
+      <ClsidMap Remove="obj\Debug\netcoreapp3.0\base-automation-project.clsidmap" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <RegFreeComManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.X.manifest" />
+      <RegFreeComManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.X.manifest" />
+      <RegFreeComManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.X.manifest" />
+      <RegFreeComManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.X.manifest" />
+      <RegFreeComManifest Remove="obj\Debug\netcoreapp3.0\base-automation-project.X.manifest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
     </ItemGroup>
 
 </Project>

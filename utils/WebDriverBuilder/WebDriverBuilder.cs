@@ -1,4 +1,5 @@
 using System;
+using base_automation_project.utils.Models;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Safari;
