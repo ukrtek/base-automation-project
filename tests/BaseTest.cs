@@ -19,7 +19,7 @@ namespace base_automation_project.tests
         public BaseTest(TestFixture fixture)
         {
             this.Driver = fixture.Driver;
-            HomePage = new HomePage();
+            HomePage = new HomePage(Driver);
             AboutPage = new AboutPage();
             BlogsPage = new BlogsPage();
             ContactPage = new ContactPage();
