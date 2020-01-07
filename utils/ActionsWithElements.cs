@@ -6,10 +6,10 @@ namespace base_automation_project.utils
     {
         private RemoteWebDriver _webDriver;
 
-        public ActionsWithElements(RemoteWebDriver webDriver)
-        {
-            _webDriver = webDriver;
-        }
+//        public ActionsWithElements(RemoteWebDriver webDriver)
+//        {
+//            _webDriver = webDriver;
+//        }
 
     }
 }

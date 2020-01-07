@@ -8,12 +8,25 @@ namespace base_automation_project.utils.WebDriverBuilder
 {
     public class WebDriverBuilder
     {
+        public static RemoteWebDriver BuildDriver(DriverOption option)
+        {
+            switch (option.Browser)
+            {
+                case Browsers.Chrome:
+                    return GetChromeDriver(option);
+
+                case Browsers.Safari:
+                    return GetSafariDriver(option);
+
+                default:
+                    throw new Exception("Driver is not supported");
+            }
+        }
         private static RemoteWebDriver GetChromeDriver(DriverOption option)
                  {
                      var chromeOptions = new ChromeOptions();
                      chromeOptions.AddAdditionalCapability("useAutomationExtension", false);
                      chromeOptions.AddArgument("no-sandbox");
-                     chromeOptions.AddArguments("start-maximized");
          			
                      var driver = new ChromeDriver(option.DriverPath, chromeOptions);
          
@@ -21,6 +34,7 @@ namespace base_automation_project.utils.WebDriverBuilder
          		
                      driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(option.TimeOutPageLoad);
                      driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(option.TimeOutImplicitWait);
+                     driver.Manage().Window.Maximize();
          
                      return driver;
                  }
@@ -40,21 +54,6 @@ namespace base_automation_project.utils.WebDriverBuilder
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(option.TimeOutImplicitWait);
          
             return driver;
-        }
-        
-        public static RemoteWebDriver BuildDriver(DriverOption option)
-        {
-            switch (option.Browser)
-            {
-                case Browsers.Chrome:
-                    return GetChromeDriver(option);
-
-                case Browsers.Safari:
-                    return GetSafariDriver(option);
-
-                default:
-                    throw new Exception("Driver is not supported");
-            }
         }
     }
 }

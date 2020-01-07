@@ -14,13 +14,13 @@ namespace base_automation_project.tests
         // do the checks here
 
         [Fact]
-        public void OpenHomePage()
+        public void DemoTest()
         {
-            WebDriver.Navigate().GoToUrl("http://google.com/");
+            
         }
-        
-        
 
-
+        public Test1(TestFixture fixture) : base(fixture)
+        {
+        }
     }     
 }

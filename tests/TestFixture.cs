@@ -10,12 +10,11 @@ namespace base_automation_project.tests
 {
     public class TestFixture : IDisposable
     {
-        public RemoteWebDriver WebDriver;
+        public RemoteWebDriver Driver;
         public TestFixture()
         {
             var driverOption = ConfigProvider.GetFromSection<DriverOption>("driverOption");
-            WebDriver = WebDriverBuilder.BuildDriver(driverOption);
-            WebDriver.Manage().Window.Maximize(); 
+            Driver = WebDriverBuilder.BuildDriver(driverOption);
             
             //todo
             //init logger
@@ -23,8 +22,8 @@ namespace base_automation_project.tests
 
         public void Dispose()
         {
-            WebDriver.Quit();
-            WebDriver?.Dispose();                
+            Driver.Quit();
+            Driver?.Dispose();                
         }
     }
 }
