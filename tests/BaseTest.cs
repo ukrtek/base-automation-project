@@ -1,4 +1,5 @@
 using base_automation_project.Pages;
+using base_automation_project.utils;
 using OpenQA.Selenium.Remote;
 using Xunit;
 
@@ -9,6 +10,7 @@ namespace base_automation_project.tests
         
         protected RemoteWebDriver Driver;
         //todo:add logger
+        protected ConfigProvider ConfigProvider;
         
         protected HomePage HomePage;
         protected AboutPage AboutPage;
@@ -19,10 +21,12 @@ namespace base_automation_project.tests
         public BaseTest(TestFixture fixture)
         {
             this.Driver = fixture.Driver;
+            //todo - init logger
+            ConfigProvider = new ConfigProvider();
             HomePage = new HomePage(Driver);
-            AboutPage = new AboutPage();
-            BlogsPage = new BlogsPage();
-            ContactPage = new ContactPage();
+            AboutPage = new AboutPage(Driver);
+            BlogsPage = new BlogsPage(Driver);
+            ContactPage = new ContactPage(Driver);
         }
     }
 }
