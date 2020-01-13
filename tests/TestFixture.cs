@@ -12,16 +12,14 @@ namespace base_automation_project.tests
     public class TestFixture : IDisposable
     {
         public RemoteWebDriver Driver;
+        public LoggerManager LoggerManager;
         public ILogger Logger;
 
         public TestFixture()
         {
             var driverOption = ConfigProvider.GetFromSection<DriverOption>("driverOption");
             Driver = WebDriverBuilder.BuildDriver(driverOption);
-            Logger = new LoggerConfiguration()
-                .WriteTo.Console()
-                .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
+            Logger = LoggerManager.buildLogger();
         }
 
         public void Dispose()
